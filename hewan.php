@@ -69,7 +69,6 @@ class Hewan {
         return $stmt->execute();
     }
 
-    // Hapus data hewan
     public function delete($id) {
         $query = "DELETE FROM hewan WHERE id = ?";
         $stmt = $this->db->conn->prepare($query);
@@ -78,3 +77,4 @@ class Hewan {
     }
 }
 ?>
+
